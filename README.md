@@ -36,12 +36,11 @@ We used the `Bow Classifier` for our Model. For it we created a class BoWClassif
 For the second model we used Sequence Classification with `LSTM Recurrent Neural Networks`. For it we also created a separate class `LSTMClassifier` which also inherits the `nn.Module` and we tokenized the sentances using the `Tokenizer`module from `keras`. Also we introduced downsampling in order to speed up the time and to check if this will affect our neural network.
 
 
-## Results
+#### __Results__
 
 We got only 46% accuracy for dev and 0.824 for the loss which we consider very bad results. 
 
-<img width="358" alt="Screenshot 2021-05-09 at 17 03 58" src="https://user-images.githubusercontent.com/27647952/117577909-208fd680-b0ec-11eb-8e47-9ec00055a035.png"><img width="984" alt="Screenshot 2021-05-09 at 17 04 16" src="https://user-images.githubusercontent.com/27647952/117577918-2d142f00-b0ec-11eb-9d00-b018b62975ee.png">
-
+<img width="358" alt="Screenshot 2021-05-09 at 17 03 58" src="https://user-images.githubusercontent.com/27647952/117577909-208fd680-b0ec-11eb-8e47-9ec00055a035.png">
 <img width="984" alt="Screenshot 2021-05-09 at 17 04 16" src="https://user-images.githubusercontent.com/27647952/117577920-30a7b600-b0ec-11eb-84bd-abbe4c6178e0.png">
 
 
@@ -52,9 +51,9 @@ We got only 46% accuracy for dev and 0.824 for the loss which we consider very b
 - [x] Doing the Sanity check the notebook just stops because it requires too much memory so we commented out this part
 
 
-# Accomplishments that we're proud of
-
-
-
 # What we learned
 
+- [x] use `Python`libraries to create models
+- [x] impove the accuracy by testung models with different parametes
+- [x] solving an nlp problme from scratch
+- [x] overcoming memory issues by decreasing the dataset or batch size  
