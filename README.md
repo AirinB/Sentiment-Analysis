@@ -43,6 +43,10 @@ We got only 46% accuracy for dev and 0.824 for the loss which we consider very b
 <img width="358" alt="Screenshot 2021-05-09 at 17 03 58" src="https://user-images.githubusercontent.com/27647952/117577909-208fd680-b0ec-11eb-8e47-9ec00055a035.png">
 <img width="984" alt="Screenshot 2021-05-09 at 17 04 16" src="https://user-images.githubusercontent.com/27647952/117577920-30a7b600-b0ec-11eb-84bd-abbe4c6178e0.png">
 
+**Test accuracy**
+51.5%
+
+
 
 #### Challenges we ran into
 
