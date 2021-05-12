@@ -35,6 +35,11 @@ We used the `Bow Classifier` for our Model. For it we created a class BoWClassif
 
 For the second model we used Sequence Classification with `LSTM Recurrent Neural Networks`. For it we also created a separate class `LSTMClassifier` which also inherits the `nn.Module` and we tokenized the sentances using the `Tokenizer`module from `keras`. Also we introduced downsampling in order to speed up the time and to check if this will affect our neural network.
 
+## Glove Embeddings 
+
+Global Vectors for Word Representation, or GloVe, is an “unsupervised learning algorithm for obtaining vector representations for words.” 
+Training is performed on aggregated global word-word co-occurrence statistics from a corpus. It is developed by Stanford.
+We used the glove.6B.100d embeddings for the model.
 
 #### __Results__
 
@@ -45,6 +50,28 @@ We got only 46% accuracy for dev and 0.824 for the loss which we consider very b
 
 **Test accuracy**
 51.5%
+
+We decided to use other metrics to understand the poor results
+
+**Precision**
+
+When evaluating the sentiment (positive, negative, neutral) of a given text document, the baseline of precision lies around 
+80-85% . This is the baseline we try to meet or beat when we're training a sentiment scoring system.
+Test Precision : 75.9%
+Which is lower than the baseline.
+
+**Confusion Matrix**
+
+A confusion matrix is a method of visualizing classification results.
+Confusion matrix will show you if your predictions match the reality and how do they match in more detail.
+
+![image](https://user-images.githubusercontent.com/41289743/118036377-1ee33e80-b38a-11eb-8e63-45d05be6421b.png)
+
+
+The Confusion matrix helps us understand how many correct prediction does the model make
+
+![image](https://user-images.githubusercontent.com/41289743/118035783-50a7d580-b389-11eb-9b80-7030ea5982c0.png)
+
 
 
 
